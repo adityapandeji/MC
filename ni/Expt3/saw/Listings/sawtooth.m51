@@ -1,0 +1,76 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/31/2023  16:58:04  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\sawtooth.obj TO .\Objects\sawtooth PRINT (.\Listings\sawtooth.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\sawtooth.obj (SAWTOOTH)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\sawtooth (SAWTOOTH)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0019H     UNIT         ?PR?MAIN?SAWTOOTH
+            CODE    0819H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\sawtooth (SAWTOOTH)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?SAWTOOTH
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\sawtooth (SAWTOOTH)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SAWTOOTH
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  C:0800H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0006H         SYMBOL        temp
+  -------         ENDDO         
+  C:0800H         LINE#         4
+  C:0800H         LINE#         7
+  C:0803H         LINE#         8
+  C:0803H         LINE#         10
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/31/2023  16:58:04  PAGE 2
+
+
+  C:0806H         LINE#         11
+  C:080AH         LINE#         12
+  C:080CH         LINE#         14
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        SAWTOOTH
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0019H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=40
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

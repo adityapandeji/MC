@@ -1,0 +1,22 @@
+#include<reg51.h>
+void msdelay(unsigned int);
+void msdelay(unsigned int time){
+	unsigned int i,j;
+	for(i=0;i<time;i++){
+		for(j=0;j<1275;j++)
+		{
+		}
+	}
+}
+void main()
+{
+	int i,j;
+	for(i=0;i<10;i++)
+	{
+		for(j=0;j<5;j++)
+		{
+		P1 = (i<<4)|j;
+		msdelay(250);
+		}
+	}
+}

@@ -1,0 +1,14 @@
+org 0000h
+	
+MOV R0,#34H
+MOV R1,#36H
+MOV R3,#05H
+
+back:MOV A, @R0
+MOV @R1, A
+DEC R0
+DEC R1
+DJNZ R3, back
+
+here:SJMP here
+END

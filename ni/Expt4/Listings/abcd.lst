@@ -1,0 +1,51 @@
+C51 COMPILER V9.56.0.0   ABCD                                                              10/30/2023 15:37:46 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE ABCD
+OBJECT MODULE PLACED IN .\Objects\abcd.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE abcd.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\abcd
+                    -.lst) TABS(2) OBJECT(.\Objects\abcd.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void delay(unsigned int time);
+   4          
+   5          void main(){
+   6   1        
+   7   1        while(1){
+   8   2        
+   9   2            P1=0x03;
+  10   2            delay(100);
+  11   2            P1=0X06;
+  12   2            delay(100);
+  13   2            P1=0X0C;
+  14   2            delay(100);
+  15   2            P1=0x09;
+  16   2            delay(100);
+  17   2         
+  18   2        }
+  19   1      }
+  20          void delay(unsigned int time)
+  21          {
+  22   1        unsigned int i,j;
+  23   1        for(i = 0; i < time; i++){
+  24   2          for(j = 0; j < 1275; j++){
+  25   3          }
+  26   2        }
+  27   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     62    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

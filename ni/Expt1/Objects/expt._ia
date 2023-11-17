@@ -1,0 +1,1 @@
+"expt.asm" SET (SMALL) DEBUG PRINT(.\Listings\expt.lst) OBJECT(.\Objects\expt.obj) EP

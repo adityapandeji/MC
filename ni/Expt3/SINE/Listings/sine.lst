@@ -1,0 +1,38 @@
+C51 COMPILER V9.56.0.0   SINE                                                              10/31/2023 16:48:47 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE SINE
+OBJECT MODULE PLACED IN .\Objects\sine.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE sine.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\sine
+                    -.lst) TABS(2) OBJECT(.\Objects\sine.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void main(void){
+   3   1      unsigned char sin_val[12]={128,192,238,255,238,192,128,64,17,0,17,64};
+   4   1      
+   5   1        unsigned int i;
+   6   1      while(1){
+   7   2        
+   8   2        
+   9   2        for(i=0;i<12;i++){
+  10   3        P1=sin_val[i];
+  11   3        
+  12   3      }
+  13   2      }
+  14   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     42    ----
+   CONSTANT SIZE    =     12    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

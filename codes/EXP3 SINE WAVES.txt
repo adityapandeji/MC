@@ -1,0 +1,21 @@
+#include<reg51.h>
+void msdelay(unsigned int);
+void msdelay(unsigned int time){
+	unsigned int i,j;
+	for(i=0;i<time;i++){
+		for(j=0;j<1275;j++)
+		{
+		}
+	}
+}
+void main()
+{
+	unsigned char signwave[23]={128,161,192,219,239,252,255,252,239,218,192,161,128,95,64,37,17,38,64,95,128};
+	unsigned char x;
+	while(1){
+	for(x=0;x<23;x++){
+	P1=signwave[x];
+	msdelay(100);
+	}
+	}
+}

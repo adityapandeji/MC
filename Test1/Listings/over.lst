@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  OVER                                                                 08/21/2023 19:09:39 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\over.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE over.ASM SET(SMALL) DEBUG PRINT(.\Listings\over.lst) OBJECT(.\Objects\o
+                      ver.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 00H
+0000 7A0A              2     MOV R2,#0AH
+0002 7829              3     MOV R0,#29H
+0004 792E              4     MOV R1,#2EH
+                       5     
+0006 E6                6     LABEL1:MOV A,@R0
+0007 F7                7             MOV @R1,A
+0008 18                8             DEC R0
+0009 19                9             DEC R1
+000A DAFA             10             DJNZ R2,LABEL1
+                      11             
+                      12     END
+                             
+A51 MACRO ASSEMBLER  OVER                                                                 08/21/2023 19:09:39 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LABEL1 . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

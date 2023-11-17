@@ -1,0 +1,45 @@
+C51 COMPILER V9.56.0.0   DAC                                                               10/30/2023 16:13:20 PAGE 1   
+
+
+C51 COMPILER V9.56.0.0, COMPILATION OF MODULE DAC
+OBJECT MODULE PLACED IN .\Objects\DAC.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE DAC.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\DAC.l
+                    -st) TABS(2) OBJECT(.\Objects\DAC.obj)
+
+line level    source
+
+   1          // Online C compiler to run C program online
+   2          #include <reg51.h>
+   3          
+   4          void main(void) {
+   5   1          // Write C code here
+   6   1          int temp;
+   7   1          P1 = 0x00;
+   8   1          while(1){
+   9   2            
+  10   2            
+  11   2          for(temp = 0; temp<=255; temp++){
+  12   3            P1 = temp;
+  13   3            
+  14   3          }
+  15   2             for(temp = 255; temp>=0; temp--){
+  16   3            P1 = temp;
+  17   3            
+  18   3          } 
+  19   2            
+  20   2          }
+  21   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     42    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

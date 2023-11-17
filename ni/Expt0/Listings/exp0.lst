@@ -1,0 +1,69 @@
+A51 MACRO ASSEMBLER  EXP0                                                                 10/31/2023 17:46:32 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.5.0
+OBJECT MODULE PLACED IN .\Objects\exp0.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE exp0.asm SET(SMALL) DEBUG PRINT(.\Listings\exp0.lst) OBJECT(.\Objects\e
+                      xp0.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+
+0000 7402              2     MOV A,#02H;
+
+0002 75F003            3     MOV B,#03H;
+
+0005 25F0              4     ADD A,B;
+
+0007 F8                5     MOV R0,A;
+
+                       6     
+
+0008 7408              7     MOV A,#08H;
+
+000A 75F003            8     MOV B,#03H;
+
+000D 95F0              9     SUBB A,B;
+
+000F F9               10     MOV R1,A;
+
+                      11     
+
+0010 7402             12     MOV A,#02H;
+
+0012 75F003           13     MOV B,#03H;
+
+0015 A4               14     MUL AB;
+
+0016 FA               15     MOV R2,A;
+
+                      16     
+
+0017 7406             17     MOV A,#06H;
+
+0019 75F003           18     MOV B,#03H;
+
+001C 84               19     DIV AB;
+
+001D FB               20     MOV R3,A;
+
+                      21     
+
+                      22     END
+
+A51 MACRO ASSEMBLER  EXP0                                                                 10/31/2023 17:46:32 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

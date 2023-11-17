@@ -1,0 +1,88 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/31/2023  16:49:02  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\sine.obj TO .\Objects\sine PRINT (.\Listings\sine.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\sine.obj (SINE)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?COPY)
+
+
+LINK MAP OF MODULE:  .\Objects\sine (SINE)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         _DATA_GROUP_
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00F6H     UNIT         ?C?LIB_CODE
+            CODE    08F6H     002AH     UNIT         ?PR?MAIN?SINE
+            CODE    0920H     000CH     UNIT         ?CO?SINE
+            CODE    092CH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\sine (SINE)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?SINE
+
+?PR?MAIN?SINE                  0008H    000CH
+  +--> ?CO?SINE
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\sine (SINE)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SINE
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  C:08F6H         PUBLIC        main
+  C:0920H         SYMBOL        _?ix1000
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/31/2023  16:49:02  PAGE 2
+
+
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        sin_val
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:08F6H         LINE#         2
+  C:08F6H         LINE#         3
+  C:0909H         LINE#         6
+  C:0909H         LINE#         9
+  C:090CH         LINE#         10
+  C:0913H         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        SINE
+
+  -------         MODULE        ?C?COPY
+  C:08D0H         PUBLIC        ?C?COPY
+  -------         ENDMOD        ?C?COPY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0036H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=21.0 xdata=0 code=315
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

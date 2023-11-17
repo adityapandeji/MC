@@ -1,0 +1,48 @@
+C51 COMPILER V9.60.7.0   BCD                                                               08/21/2023 19:54:04 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE BCD
+OBJECT MODULE PLACED IN .\Objects\bcd.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE bcd.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\bcd.l
+                    -st) TABS(2) OBJECT(.\Objects\bcd.obj)
+
+line level    source
+
+   1          // Problem Statement: Write a Program to implement BCD Counter in embedded C
+   2          // Name: Pande Aditya
+   3          // Roll no. : 32251
+   4          // Batch : K6
+   5          
+   6          #include<reg51.h>
+   7          
+   8          void MsDelay(unsigned int itime){
+   9   1        unsigned int i,j;
+  10   1        for(i=0;i<itime;i++){
+  11   2          for(j=0;j<1275;j++){}}
+  12   1      }
+  13          
+  14          void main(){
+  15   1        unsigned int k,z;
+  16   1      
+  17   1        for(k=0;k<=9;k++){
+  18   2          for(z=0;z<=9;z++){
+  19   3          P1=(k<<4)|z;
+  20   3            MsDelay(5000);
+  21   3          }
+  22   2        }
+  23   1      
+  24   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     85    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

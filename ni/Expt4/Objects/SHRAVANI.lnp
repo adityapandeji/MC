@@ -1,0 +1,3 @@
+".\Objects\abcd.obj" 
+TO ".\Objects\SHRAVANI" 
+PRINT(".\Listings\SHRAVANI.m51") RAMSIZE(256) 

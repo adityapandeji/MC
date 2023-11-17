@@ -1,0 +1,3 @@
+".\Objects\DAC.obj" 
+TO ".\Objects\deshmukh" 
+PRINT(".\Listings\deshmukh.m51") RAMSIZE(256) 
